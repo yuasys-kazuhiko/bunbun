@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シンプルボウリング</title>
+    <style>
+        body { text-align: center; background-color: #f0f0f0; margin: 0; padding: 20px; font-family: sans-serif; }
+        canvas { 
+            background-color: #e0c9a3; /* レーンの木目色 */
+            border: 2px solid #8b5a2b; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>シンプルボウリング試作</h1>
+    <p>画面をクリックしてボールを投げる！</p>
+    <!-- ここにゲームが描画されます -->
+    <canvas id="gameCanvas" width="300" height="500"></canvas>
+    
+    <script src="script.js"></script>
+</body>
+</html>

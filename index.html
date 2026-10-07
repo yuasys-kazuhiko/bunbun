@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>シンプルボウリング</title>
+    <title>ぶんぶんゲームセンター</title>
     <style>
-        body { text-align: center; background-color: #f0f0f0; margin: 0; padding: 20px; font-family: sans-serif; }
-        canvas { 
-            background-color: #e0c9a3; /* レーンの木目色 */
-            border: 2px solid #8b5a2b; 
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
-            cursor: pointer;
+        body { text-align: center; background-color: #fce4ec; margin: 0; padding: 40px; font-family: sans-serif; }
+        h1 { color: #d81b60; }
+        .game-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 20px; max-width: 400px; margin: 0 auto; }
+        .game-list a { 
+            display: block; padding: 20px; background-color: white; 
+            border: 2px solid #f06292; border-radius: 10px; 
+            text-decoration: none; color: #333; font-weight: bold; font-size: 1.2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;
         }
+        .game-list a:hover { transform: translateY(-5px); background-color: #f8bbd0; }
     </style>
 </head>
 <body>
-    <h1>シンプルボウリング試作</h1>
-    <p>画面をクリックしてボールを投げる！</p>
-    <!-- ここにゲームが描画されます -->
-    <canvas id="gameCanvas" width="300" height="500"></canvas>
-    
-    <script src="script.js"></script>
+    <h1>ぶんぶんゲームセンター</h1>
+    <p>遊んでみたいゲームを選んでね！</p>
+    <ul class="game-list">
+        <li><a href="game1/index.html">🎳 シンプルボウリング</a></li>
+        <li><a href="game2/index.html">🍎 リンゴキャッチ（新作！）</a></li>
+    </ul>
 </body>
 </html>
